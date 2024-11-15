@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count-Up Timer with Add Time</title>
+    <link rel="stylesheet" href="pro3.css">
+</head>
+<body>
+    <div class="timer-container">
+        <h2>Event Timer</h2>
+        <div id="timer">
+            <div class="time-box">
+                <span id="hours">00</span>
+                <p>Hours</p>
+            </div>
+            <div class="time-box">
+                <span id="minutes">00</span>
+                <p>Minutes</p>
+            </div>
+            <div class="time-box">
+                <span id="seconds">00</span>
+                <p>Seconds</p>
+            </div>
+        </div>
+        
+        <!-- Add Time Section -->
+        <div class="add-time">
+            <label for="addHours">Hours:</label>
+            <input type="number" id="addHours" min="0" placeholder="0">
+            <label for="addMinutes">Minutes:</label>
+            <input type="number" id="addMinutes" min="0" placeholder="0">
+            <label for="addSeconds">Seconds:</label>
+            <input type="number" id="addSeconds" min="0" placeholder="0">
+            <button onclick="addTime()">Add Time</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

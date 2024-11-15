@@ -1,0 +1,78 @@
+/* General Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.timer-container {
+    text-align: center;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+#timer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.time-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time-box span {
+    font-size: 32px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.time-box p {
+    margin-top: 5px;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Add Time Section Styling */
+.add-time {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.add-time label, .add-time input {
+    font-size: 14px;
+}
+
+.add-time input {
+    width: 50px;
+    padding: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .timer-container {
+        width: 90%;
+    }
+}
